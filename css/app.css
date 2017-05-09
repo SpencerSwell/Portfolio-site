@@ -20,6 +20,11 @@ nav {
   padding: 30px;
   margin-top: 30px; }
 
+nav > a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px; }
+
 body {
   background-color: #2d302d;
   margin-top: 30px; }
@@ -200,7 +205,8 @@ h4 {
   background-color: #539553;
   margin-right: 15px;
   padding: 10px;
-  color: #CFD4CA; }
+  color: #CFD4CA;
+  margin-right: 50px; }
 
 .project-name {
   text-align: center;
