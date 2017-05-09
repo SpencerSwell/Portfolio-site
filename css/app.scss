@@ -1,0 +1,360 @@
+@import '0-plugins/plugins-dir';
+@import '1-base/base-dir';
+@import '2-modules/modules-dir';
+@import '3-layouts/layouts-dir';
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400|Lato:300,400');
+
+$background-color:#2D302D;
+$accent-color:#539553;
+$contrast-color:#196219;
+$overlay-color:rgba(49,46,46,.7);
+$line-spacing: 22px;
+$header-font:'Lato', sans-serif;
+$normal-font: 'Fira Sans', sans-serif;
+
+
+* {
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+
+}
+
+div { box-sizing: border-box; }
+
+a {
+	color: #CFD4CA;
+	text-decoration:none;
+	display:inline;
+}
+
+nav{
+	font-size:16px;
+	font-family: $header-font;
+	width:25%;
+	margin-right:0px;
+	display:inline;
+	padding:30px;
+	margin-top:30px;
+}
+
+body {
+	background-color: rgb(45,48,45);
+	margin-top:30px;
+}
+
+img{
+	width:10%;
+	height:5%;
+}
+
+button {
+	font-family: $normal-font;
+}
+
+h2 {
+	color:#CFD4CA;
+	font-size:36px;
+	padding:30px;
+	font-family: $header-font;
+	margin-left:2%;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+
+p{
+	color:#CFD4CA;
+	font-family: $normal-font;
+}
+
+span {
+	display:block;
+	margin:10px 0;
+	width:50px;
+	height:2px;
+	background-color:$accent-color;
+	margin-left:4%;
+	margin-bottom:30px;
+}
+
+h4 {
+	font-family: $header-font;
+	font-size: 24px;
+	color:#CFD4CA;
+}
+
+.me {
+	margin-top:5%;
+	display:block;
+	margin-left:45%;
+	margin-right:45%;
+	height:5%;
+	border-radius: 5%;
+	margin-bottom:50px;
+}
+
+
+
+.good-is {
+	font-weight: 300;
+}
+
+.git{
+	float:right;
+	margin-right:50px;
+	width:50px;
+	height:50px;
+}
+
+.linked {
+	float:right;
+	width:50px;
+	height:50px;
+	margin-right:5%;
+}
+.h {
+	background-color:white;
+	color:black;
+	border-radius:5px;
+}
+
+.h, .a, .w, .c {
+	margin-right:5%;
+	padding:5px;
+}
+
+
+.good-is {
+	text-align:center;
+}
+
+.About {
+	background-color: $contrast-color;
+	font-size:36px;
+	font-weight: 300;
+	padding:50px;
+	line-height: 65px;
+	text-align: center;
+	border-top:1px solid #D3D3D3;
+	border-bottom:1px solid #D3D3D3;
+}
+
+
+
+.tools {
+	text-align: center;
+	font-family: $header-font;
+	font-weight:300;
+	font-size:24px;
+}
+
+.devicon, .devicon-1st, .devicon-2nd, .devicon-jest {
+	width:70px;
+	height:70px;
+	padding:50px;
+}
+
+
+
+.devicon-jest {
+	height:50px;
+}
+
+.icon-box {
+	width:60%;
+	margin-left:25%;
+}
+
+.services {
+	background-image:url(../pictures/setup.jpg);
+	z-index:-1;
+	background-repeat: no-repeat;
+	width:1905px;
+	height:650px;
+	background-size:100% 100%;
+	margin-bottom:150px;
+}
+
+.overlay {
+	background-color: rgba(49,46,46,.7);
+	width:1905px;
+	height:650px;
+}
+
+.service-headline {
+	margin-top:20px;
+	font-weight:300;
+	display:inline;
+}
+
+.service-icon {
+	width:72px;
+	height:58px;
+	display:inline;
+}
+
+.service-description {
+	font-size:24px;
+	margin-left:5%;
+	margin-top:35px;
+	font-family: $normal-font;
+	font-weight:300;
+	width:70%;
+}
+
+.web-apps {
+	width:50%;
+	padding:35px;
+	height:50%;
+	z-index:2;
+	display:inline-block;
+	border-right: 1px solid #BAA8A8;
+	border-bottom: 1px solid #BAA8A8;
+}
+
+.SEO {
+	width:50%;
+	height: 50%;
+	padding:35px;
+	border-bottom: 1px solid #BAA8A8;
+	
+	float:right;
+}
+
+.PSD {
+	padding:35px;
+	width:50%;
+	height:50%;
+	float:right;
+
+}
+
+.Bugs {
+ padding:35px;
+ width:50%;
+ height:49%;
+ border-right:1px solid #BAA8A8 ;
+}
+
+.kk {
+background-image: url('../pictures/contract.jpg');
+	width:1905px;
+	height:750px;
+	z-index:-1;
+}
+
+.second-overlay {
+width:1905px;
+height:750px;
+background-color: rgba(49,49,46,.7);
+}
+
+.prev, .next {
+	margin-top:30px;
+	float:right;
+	border-radius:5px;
+	background-color: $accent-color;
+	margin-right:15px;
+	padding:10px;
+	color:#CFD4CA;
+}
+
+.project-name {
+	text-align: center;
+	padding-top:250px;
+	font-family: $header-font;
+	font-size: 36px;
+	font-weight:300;
+}
+
+.project-summary {
+	text-align:center;
+	font-size:36px;
+}
+
+.project-details {
+	margin-left:48%;
+	width:100px;
+	height:50px;
+	border-radius: 5px;
+	background-color: $accent-color;
+	font-size:24px;
+	color:#CFD4CA;
+	display:inline;
+	margin-bottom:20px;
+
+}
+
+.app-showcase {
+	width:890px;
+	height:450px;
+	padding:10px;
+}
+
+.project-background {
+	width:910px;
+	height:480px;
+	z-index:-1;
+	background-color:$contrast-color;
+}
+
+.details {
+	margin-left:20%;
+	width:60%;
+}
+
+.contact {
+	margin-top:150px;
+	background-image: url('../pictures/river.jpg');
+	text-align:center;
+	height:700px;
+	z-index:-3;
+}
+
+.contact-me {
+padding-top:150px;
+font-family: $normal-font;
+font-weight:300;
+font-size:24px;
+}
+
+.lines {
+	margin-left:45%;
+	width:150px;
+}
+
+.contact input {
+	background-color: rgba(49,49,46,.1);
+	font-family:$normal-font;
+	font-color:#E2DADA;
+	height:35px;
+	border:0px;
+}
+
+.contact input::-webkit-input-placeholder {
+	color:white; font-size:24px;
+	} 
+.contact input:-moz-placeholder {
+	color:white; font-size:24px;
+	} 
+.contact input::-moz-placeholder {
+	color:white; font-size:24px;
+	}
+.contact input:-ms-input-placeholder {
+ color:white; font-size:24px;
+	}
+
+	.c-overlay {
+		background-color: rgba(49,49,46,.5);
+		height:700px;
+	}
+
+	.send-message {
+	width:100px;
+	height:50px;
+	border-radius: 5px;
+	background-color: $accent-color;
+	font-size:16px;
+	color:#CFD4CA;
+	margin-right:50px;
+	}
+
