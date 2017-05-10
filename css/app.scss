@@ -26,15 +26,39 @@ a {
 	text-decoration:none;
 	display:inline;
 }
+ul{
+	display:inline;
+	list-style: none;
+	margin-left:7%;
+}
+
+li {
+	list-style: none;
+	display:inline;
+	color:white;
+	font-size:1.5em;
+	width:25%;
+	margin-right:10%;
+	font-family: $header-font
+}
+
+li:hover {
+	color: $accent-color;
+}
 
 nav{
-	font-size:16px;
+	font-size:1em;
 	font-family: $header-font;
-	width:25%;
+	width:100%;
 	margin-right:0px;
 	display:inline;
-	padding:30px;
-	margin-top:30px;
+	background-color:rgba(49,46,46,.6);
+	position:fixed;
+	top:0px;
+	padding-top:1%;
+	padding-left:1%;
+	padding-bottom:1%;
+	
 }
 
 nav > a:hover {
@@ -59,7 +83,7 @@ button {
 
 h2 {
 	color:#CFD4CA;
-	font-size:36px;
+	font-size:2.25em;
 	padding:30px;
 	font-family: $header-font;
 	margin-left:2%;
@@ -84,44 +108,48 @@ span {
 
 h4 {
 	font-family: $header-font;
-	font-size: 24px;
+	font-size: 1.5em;
 	color:#CFD4CA;
 }
 
-.me {
-	margin-top:5%;
-	display:block;
-	margin-left:45%;
-	margin-right:45%;
-	height:5%;
-	border-radius: 5%;
-	margin-bottom:50px;
-}
 
 
 
-.good-is {
-	font-weight: 300;
-}
+
+
 
 .git{
 	float:right;
 	margin-right:50px;
-	width:50px;
-	height:50px;
+	margin-top:2%;
+	min-width:20px;
+	min-height:20px;
+	max-width:50px;
+	max-height:50px;
 }
 
 .linked {
 	float:right;
-	width:50px;
-	height:50px;
-	margin-right:5%;
-}
-.h {
+	margin-top:2%;
+	margin-right:50px;
 	background-color:white;
-	color:black;
-	border-radius:5px;
+	border-radius:8px;
+	min-width:20px;
+	min-height:20px;
+	max-width:50px;
+	max-height:50px;
 }
+
+.treehouse {
+	float:right;
+	margin-right:45%;
+	margin-top:2%;
+	border-radius:8px;
+	min-width:20px;
+	min-height:20px;
+	max-width:50px;
+	max-height:50px;
+} 
 
 .h, .a, .w, .c {
 	margin-right:5%;
@@ -129,19 +157,15 @@ h4 {
 }
 
 
-.good-is {
-	text-align:center;
-}
 
 .About {
 	background-color: $contrast-color;
-	font-size:36px;
+	font-size:2.25em;
 	font-weight: 300;
-	padding:50px;
+	padding:60px;
 	line-height: 65px;
 	text-align: center;
-	border-top:1px solid #D3D3D3;
-	border-bottom:1px solid #D3D3D3;
+	margin-top:100px;
 }
 
 
@@ -150,58 +174,46 @@ h4 {
 	text-align: center;
 	font-family: $header-font;
 	font-weight:300;
-	font-size:24px;
-}
-
-.devicon, .devicon-1st, .devicon-2nd, .devicon-jest {
-	width:70px;
-	height:70px;
-	padding:50px;
+	font-size:1.5em;
 }
 
 
-
-.devicon-jest {
-	height:50px;
-}
-
-.icon-box {
-	width:60%;
-	margin-left:25%;
-}
 
 .services {
 	background-image:url(../pictures/setup.jpg);
 	z-index:-1;
 	background-repeat: no-repeat;
-	width:1905px;
-	height:650px;
+	width:100%;
+	min-height:600px;
 	background-size:100% 100%;
-	margin-bottom:150px;
+	margin-bottom:12%;
 }
 
 .overlay {
 	background-color: rgba(49,46,46,.7);
-	width:1905px;
-	height:650px;
+	width:100%;
+	min-height:600px;
+	height:auto;
 }
 
 .service-headline {
-	margin-top:20px;
+	margin-top:8%;
 	font-weight:300;
 	display:inline;
 }
 
 .service-icon {
-	width:72px;
-	height:58px;
+	width:8%;
+	height:8%;
+	min-width:25px;
+	min-height:25px;
 	display:inline;
 }
 
 .service-description {
-	font-size:24px;
+	font-size:1.5em;
 	margin-left:5%;
-	margin-top:35px;
+	margin-top:6%;
 	font-family: $normal-font;
 	font-weight:300;
 	width:70%;
@@ -209,7 +221,7 @@ h4 {
 
 .web-apps {
 	width:50%;
-	padding:35px;
+	padding:2%;
 	height:50%;
 	z-index:2;
 	display:inline-block;
@@ -220,14 +232,13 @@ h4 {
 .SEO {
 	width:50%;
 	height: 50%;
-	padding:35px;
+	padding:2%;
 	border-bottom: 1px solid #BAA8A8;
-	
 	float:right;
 }
 
 .PSD {
-	padding:35px;
+	padding:2%;
 	width:50%;
 	height:50%;
 	float:right;
@@ -235,21 +246,42 @@ h4 {
 }
 
 .Bugs {
- padding:35px;
+ padding:2%;
  width:50%;
- height:49%;
+ height:50%;
  border-right:1px solid #BAA8A8 ;
 }
 
-.kk {
+.app-picture-legal {
 background-image: url('../pictures/contract.jpg');
-	width:1905px;
+	width:100%;
+	height:750px;
+	z-index:-1;
+}
+
+.app-picture-diamonds {
+background-image: url('../pictures/game.jpg');
+	width:100%;
+	background-size:100% 100%;
+	height:750px;
+	z-index:-1;
+}
+.app-picture-chuck {
+background-image: url('../pictures/chuck-norris.jpg');
+	width:100%;
+	height:750px;
+	z-index:-1;
+}
+
+.app-picture-quiz {
+background-image: url('../pictures/quiz.jpg');
+	width:100%;
 	height:750px;
 	z-index:-1;
 }
 
 .second-overlay {
-width:1905px;
+width:100%;
 height:750px;
 background-color: rgba(49,49,46,.7);
 }
@@ -263,19 +295,21 @@ background-color: rgba(49,49,46,.7);
 	padding:10px;
 	color:#CFD4CA;
 	margin-right:50px;
+	width:80px;
+	height:80px;
 }
 
 .project-name {
 	text-align: center;
 	padding-top:250px;
 	font-family: $header-font;
-	font-size: 36px;
+	font-size: 2.25em;
 	font-weight:300;
 }
 
 .project-summary {
 	text-align:center;
-	font-size:36px;
+	font-size:2.25em;
 }
 
 .project-details {
@@ -284,7 +318,7 @@ background-color: rgba(49,49,46,.7);
 	height:50px;
 	border-radius: 5px;
 	background-color: $accent-color;
-	font-size:24px;
+	font-size:1.5em;
 	color:#CFD4CA;
 	display:inline;
 	margin-bottom:20px;
@@ -292,8 +326,20 @@ background-color: rgba(49,49,46,.7);
 }
 
 .app-showcase {
-	width:890px;
-	height:450px;
+	width:950px;
+	height:470px;
+	padding:10px;
+}
+
+.chuck-app-showcase {
+	width:850px;
+	height:500px;
+	padding:10px;
+}
+
+.quiz-app-showcase {
+	width:900px;
+	height:500px;
 	padding:10px;
 }
 
@@ -301,7 +347,6 @@ background-color: rgba(49,49,46,.7);
 	width:910px;
 	height:480px;
 	z-index:-1;
-	background-color:$contrast-color;
 }
 
 .details {
@@ -321,7 +366,7 @@ background-color: rgba(49,49,46,.7);
 padding-top:150px;
 font-family: $normal-font;
 font-weight:300;
-font-size:24px;
+font-size:1.5em;
 }
 
 .lines {
@@ -332,26 +377,31 @@ font-size:24px;
 .contact input {
 	background-color: rgba(49,49,46,.1);
 	font-family:$normal-font;
-	font-color:#E2DADA;
 	height:35px;
 	border:0px;
+	font-weight:300;
+	color:white;
 }
 
 .contact input::-webkit-input-placeholder {
-	color:white; font-size:24px;
+	color:white; font-size:1.5em;
+	font-weight:300;
 	} 
 .contact input:-moz-placeholder {
-	color:white; font-size:24px;
+	color:white; font-size:1.5em;
+	font-weight:300;
 	} 
 .contact input::-moz-placeholder {
-	color:white; font-size:24px;
+	color:white; font-size:1.5em;
+	font-weight:300;
 	}
 .contact input:-ms-input-placeholder {
- color:white; font-size:24px;
+ 	color:white; font-size:1.5em;
+ 	font-weight:300;
 	}
 
 	.c-overlay {
-		background-color: rgba(49,49,46,.5);
+		background-color: rgba(49,49,46,.4);
 		height:700px;
 	}
 
@@ -360,8 +410,19 @@ font-size:24px;
 	height:50px;
 	border-radius: 5px;
 	background-color: $accent-color;
-	font-size:16px;
+	font-size:1em;
 	color:#CFD4CA;
 	margin-right:50px;
 	}
 
+	.chuck-project-headline, .quiz-project-headline {
+		padding-top:30px;
+	}
+
+
+	.app-desc, .next-steps {
+		width:75%;
+		height:15%;
+	}
+
+	
