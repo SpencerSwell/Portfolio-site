@@ -184,7 +184,7 @@ h4 {
 	z-index:-1;
 	background-repeat: no-repeat;
 	width:100%;
-	min-height:600px;
+	height:25%;
 	background-size:100% 100%;
 	margin-bottom:12%;
 }
@@ -222,34 +222,46 @@ h4 {
 .web-apps {
 	width:50%;
 	padding:2%;
-	height:50%;
+	height:100%;
 	z-index:2;
 	display:inline-block;
 	border-right: 1px solid #BAA8A8;
-	border-bottom: 1px solid #BAA8A8;
+	border-left: 1px solid;
+	border-top: 1px solid rgba(111,111,111,.1);
+	border-bottom: 1px solid rgba(111,111,111,.1);
 }
 
 .SEO {
 	width:50%;
-	height: 50%;
+	height: 100%;
 	padding:2%;
-	border-bottom: 1px solid #BAA8A8;
+	border-right: 1px solid #BAA8A8;
+	border-left: 1px solid;
+	border-top: 1px solid rgba(111,111,111,.1);
+	border-bottom: 1px solid rgba(111,111,111,.1);
 	float:right;
 }
 
 .PSD {
 	padding:2%;
 	width:50%;
-	height:50%;
+	height:100%;
 	float:right;
+	border-right: 1px solid #BAA8A8;
+	border-left: 1px solid;
+	border-top: 1px solid rgba(111,111,111,.1);
+	border-bottom: 1px solid rgba(111,111,111,.1);
 
 }
 
 .Bugs {
  padding:2%;
  width:50%;
- height:50%;
- border-right:1px solid #BAA8A8 ;
+ height:100%;
+ border-right: 1px solid #BAA8A8;
+ border-left: 1px solid;
+ border-top: 1px solid rgba(111,111,111,.1);
+ border-bottom: 1px solid rgba(111,111,111,.1);
 }
 
 .app-picture-legal {
